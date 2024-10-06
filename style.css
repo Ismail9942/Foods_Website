@@ -6,9 +6,33 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body {
+  background: rgb(64, 63, 63);
+  color: #fff;
+  max-width: 1200px;
+  margin: auto;
+}
 a {
   text-decoration: none;
   color: #fff;
+}
+img {
+  width: 100%;
+}
+
+.btn {
+  background: #f44336;
+  /* width: 100%; */
+  color: #fff;
+  text-align: center;
+  padding: 12px 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e01101;
 }
 
 /* nav design */
@@ -89,23 +113,43 @@ nav ul li a:hover {
   color: #888;
   padding-block: 20px;
 }
-.btn {
-  background: #f44336;
-  padding: 12px 30px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #e01101;
-}
 
 .blog-section .right {
   width: 50%;
 }
 
-.blog-section .right img {
-  width: 100%;
+/* menu section */
+
+#menu-section {
+  padding: 100px 2rem;
+}
+.menu-container {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#menu-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+.menu-item {
+  width: 320px;
+  background: #fff;
+  padding: 20px;
+}
+
+.menu-item img {
+  object-fit: cover;
+}
+
+.menu-item h4 {
+  padding-block: 15px;
+  text-align: center;
+  color: #000;
 }
 
 @media (max-width: 640px) {
