@@ -7,6 +7,12 @@
   scroll-behavior: smooth;
 }
 
+h2 {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 body {
   background: rgb(64, 63, 63);
   color: #fff;
@@ -124,7 +130,6 @@ nav ul li a:hover {
   padding: 100px 2rem;
 }
 .menu-container {
-  padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,10 +137,6 @@ nav ul li a:hover {
   gap: 40px;
 }
 
-#menu-section h2 {
-  font-size: 28px;
-  text-align: center;
-}
 .menu-item {
   width: 320px;
   background: #fff;
@@ -150,6 +151,143 @@ nav ul li a:hover {
   padding-block: 15px;
   text-align: center;
   color: #000;
+}
+
+.trend-item {
+  width: 320px;
+  height: 320px;
+  background: #fff;
+  padding: 6px;
+  overflow: hidden;
+}
+
+.trend-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.trend-item img:hover {
+  transform: scale(1.1);
+}
+
+/* trending section */
+
+#trend-section {
+  padding: 100px 2rem;
+}
+
+.trending-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+#testimonial-section {
+  padding: 100px 2rem;
+}
+
+.test-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.test-item {
+  width: 320px;
+  color: #000;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.test-item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.test-item p {
+  padding: 20px;
+  font-size: 12px;
+  text-align: justify;
+}
+.blog-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.blog-item {
+  width: 320px;
+  background: #fff;
+  padding: 1rem;
+}
+
+.blog-item h4 {
+  color: #000;
+  padding-block: 1rem;
+  font-size: 1rem;
+}
+.blog-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+#blog-section {
+  padding: 50px 2rem;
+}
+
+footer {
+  padding: 80px 2rem;
+  background: #000;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.col h3 {
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.col-1 {
+  width: 300px;
+}
+.col p {
+  font-size: 13px;
+  color: #b9b9b9;
+  line-height: 20px;
+}
+
+.col li {
+  color: #b8b8b8;
+  padding-bottom: 6px;
+}
+
+.copyright {
+  background: #000;
+  text-align: center;
+  padding-bottom: 40px;
+  padding: 2rem;
+  font-size: 13px;
+  color: #b8b8b8;
+}
+.copyright i {
+  color: #fff;
 }
 
 @media (max-width: 640px) {
